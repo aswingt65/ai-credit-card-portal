@@ -66,7 +66,7 @@ const Chatbot = () => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask me about your finances..."
-          onKeyPress={(e) => e.key === 'Enter' && sendMessage()}
+          onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
         />
         <button
           className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
